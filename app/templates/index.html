@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid" style="background-color: rgb(51, 59, 59)">
+  <div class="container" style="color: rgb(249, 250, 252)">
+    <h1 class="text-center head" style="font-size: 80px;padding-top: 50px"><strong>the BLOG</strong></h1>
+    <div class=" text-center intro">
+      <h6 style="font-size: 100px">Welcome to the BLOG</h6>
+    </div>
+
+    <div class="text-center">
+      <a id="start" class="btn btn-success animated infinite flash" href="{{url_for('main.home')}}">View Blogs</a>
+    </div>
+  </div>
+
+    <div class="quote text-center align-bottom" style="margin-top: 120px">
+      <h5 class="ote animated fadeIn" style="animation-delay:1s;color:rgb(235, 226, 226)">{{ quote.quote }}</h5>
+      <p class="author" style="color: grey"><strong>By: {{ quote.author }}</strong></p>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
